@@ -9,9 +9,9 @@ from googleapiclient.errors import HttpError
 
 pg_connection = psycopg2.connect(
                                 host="localhost",
-                                database="postgres1",
+                                database="postgres",
                                 user="postgres",
-                                password="9842"
+                                password="bharath2k15"
                                 )
 pg_cursor = pg_connection.cursor()
 
@@ -464,6 +464,5 @@ if selected == "View":
 
         df = pd.DataFrame(query_result, columns=column_names, index=np.arange(1, len(query_result) + 1))
         st.write(df)
-
 
 
